@@ -40,7 +40,7 @@ class DemandList(models.Model):
     shcedulePlanfinishDate = models.DateField(max_length=100, null=True,blank=True, verbose_name='排期计划上线时间')
     scheduleStage = models.CharField(max_length=100, null=True,blank=True, verbose_name='排期阶段')
     scheduleStatus = models.CharField(max_length=100, null=True,blank=True, verbose_name='排期状态')
-    scheduleFinishRatio = models.CharField(max_length=10, null=True,blank=True, verbose_name='完成比例')
+    scheduleFinishRatio = models.CharField(max_length=6, null=True,blank=True, verbose_name='完成比例')
     scheduleProgressDescription = models.TextField(null=True,blank=True, verbose_name='进展说明')
     involvSystems = models.CharField(max_length=200, null=True,blank=True, verbose_name='相关系统')
     DemandAnalyzeOrProjectApprovePSD = models.DateField( null=True,blank=True, verbose_name='需求细化及评审/立项准备计划开始时间')
